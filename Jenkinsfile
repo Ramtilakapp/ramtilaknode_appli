@@ -44,8 +44,8 @@ pipeline {
                             sshTransfer(
                                 sourceFiles: '**/*',
                                 removePrefix: '', // Adjust this if needed
-                                remoteDirectory: '/path/to/deployment/dir', // Set this to the deployment directory on the EC2 instance
-                                execCommand: 'cd /path/to/deployment/dir && npm install && pm2 restart all' // Adjust paths and commands as needed
+                                remoteDirectory: '/home/abcd/nodedeploy', // Set this to the deployment directory on the EC2 instance
+                                execCommand: 'cd /home/abcd/nodedeploy/dir && npm install && pm2 restart all' // Adjust paths and commands as needed
                             )
                         ]
                     )
