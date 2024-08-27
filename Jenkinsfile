@@ -45,7 +45,7 @@ pipeline {
                                 sourceFiles: '**/*',
                                 removePrefix: '', // Adjust this if needed
                                 remoteDirectory: '/home/abcd/nodedeploy', // Set this to the deployment directory on the EC2 instance
-                                execCommand: 'cd /home/abcd/nodedeploy/dir && npm install && pm2 restart all' // Adjust paths and commands as needed
+                                execCommand: 'cd /home/abcd/nodedeploy && pm2 restart all' // Adjust paths and commands as needed
                             )
                         ]
                     )
