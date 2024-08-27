@@ -13,12 +13,12 @@ pipeline {
             }
         }
         
-       /*stage('Install Dependencies') {
+       stage('Install Dependencies') {
            steps {
-                // Install Node.js dependencies
-           //     sh 'npm install'
-            //}
-    } */
+                 Install Node.js dependencies
+                sh 'npm install'
+            }
+    } 
         
         stage('Run Tests') {
             steps {
